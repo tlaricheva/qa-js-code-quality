@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/tlaricheva/qa-js-code-quality/issues"
   },
-  "homepage": "https://github.com/tlaricheva/qa-js-code-quality#readme"
+  "homepage": "https://github.com/tlaricheva/qa-js-code-quality#readme",
+  "devDependencies": {
+    "eslint": "^9.39.2"
+  }
 }
