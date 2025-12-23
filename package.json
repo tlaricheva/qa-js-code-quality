@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
+  "lint-staged": {
+  "*.{js,mjs,cjs}": "eslint"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tlaricheva/qa-js-code-quality.git"
@@ -17,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/tlaricheva/qa-js-code-quality/issues"
   },
-  "homepage": "https://github.com/tlaricheva/qa-js-code-quality#readme"
+  "homepage": "https://github.com/tlaricheva/qa-js-code-quality#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4"
+  }
 }
